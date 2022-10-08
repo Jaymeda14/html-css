@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: #D6D58E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #005C53;
+}
+h2{
+    color: #042940;
+}
+h1#qqnome{
+    color: #042940;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.avancado{
+    color: #5c0e00;
+    font-weight: bolder;
+}
+.intermediario{
+    color: #005c05;
+    font-size: larger;
+    font-weight: 900;
+}
+.basico{
+    color: #5c5600;
+}
