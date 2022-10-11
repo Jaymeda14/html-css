@@ -13,15 +13,14 @@
    padding: 0px; 
    margin: 0px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
 
 html, body {
     min-height: 100vh;
-    background-color: black;
-    font-family: var(--fonte1);
+    background-color: black;    
 }
 header{
-    background-color: black;
     color: white;
     text-align: center;
     font-family: var(--fonte2);
@@ -41,22 +40,27 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
-body {
-
-}
 .normal{
     background-color: white;
-    color: black;
+    color: black;    
 }
 .imagem{
-    background-color: aqua;
-    color: white;
+    background-image: url(../imagens/background001.jpg);
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.39);
+    background-attachment: fixed;
+    background-position: center;    
 }
 .imagem > p{
-    background-color: rgba(0, 0, 0, 0.226);
-    width: 400px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
     color: white;
+    text-shadow: 2px 2px 2px black;  
+    font-family: var(--fonte3);  
+}
+.normal > p{
+    font-family: var(--fonte3);
 }
 section{
     padding-top: 10vh;
@@ -64,15 +68,21 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 4.5vw;
+    font-size: 3vw;
+    align-content: left;    
 }
 section.p{
     display: inline-block;
-
+}
+#livro{
+    background-image: url(../imagens/background002.jpg);
 }
 footer{
     background-color: black;
     text-align: center;
     color: white;
     padding: 10px;
+}
+footer a{
+    font-weight: bold;
 }
