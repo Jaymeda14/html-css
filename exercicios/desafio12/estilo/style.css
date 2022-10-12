@@ -82,7 +82,9 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+    background-attachment: fixed;    
 }
 footer a{
     font-weight: bold;
+      
 }

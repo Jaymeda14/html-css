@@ -11,7 +11,9 @@
          text-transform: uppercase; 
         }
         table{
-            width: 500px;
+                width: 500px;
+                border-collapse: collapse;
+                position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -20,16 +22,28 @@
         thead, tfoot{
             background-color: rgb(122, 122, 122);
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(122, 122, 122);
+        }
         .num{
             text-align: right;
         }
+        tbody tr:nth-child(even){
+            background-color: aqua;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
+        com explicação sobre zebrado
+        ------------------------
         ANATOMIA PARA TABELAS GRANDES
         table
+            CAPTION
             thead
                 tr, td, th
             tbody
@@ -39,9 +53,14 @@
 
     -->
     <table>
+        <CAPTION>POPULAÇÃO DAS UNIDADES FEDERATIVAS</CAPTION>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col";>
+                Estado
+            </th>
+            <th scope="col" style="width: 50px;">
+                População
+            </th>
         </head>
         <tbody>
             <tr>
@@ -62,8 +81,10 @@
             </tr>
         </body>
         <tfoot>
-            <td>Total de Habitantes</td>
-            <td class="num"><strong>11.000.000</strong></td>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <th class="num"><strong>11.000.000</strong></th>
+            </tr>
         </tfoot>
     </table>
     
