@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* estilo para impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+    line-height: 20px;    
+}
+
+menu{
+    display: none;
+}
+main p{
+    text-align: justify;
+}
+article{
+    width: 100%;
+}
+article::after{
+    content: 'Este artigo é apenas para testes';
+}
